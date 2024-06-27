@@ -6,6 +6,9 @@ import { ChatFooter } from '../ChatFooter';
 import { Default } from '../Default';
 
 export const Chat = ({userChat, visibility, setVisibility}) => {
+  if(!userChat){
+    setVisibility(true)
+  }
   if(!userChat) return <Default/>
   return (
     <C.Container>

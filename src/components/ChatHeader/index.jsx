@@ -27,7 +27,3 @@ export const ChatHeader = ({photoURL, name, visibility, setVisibility}) => {
     </C.Container>
   )
 }
-
-export const isVisible = createContext({
-  
-});

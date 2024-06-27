@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
   width: 35%;
@@ -10,19 +10,7 @@ export const Container = styled.div`
     position: absolute;
     background-color: #fff;
     width: fit-content;
+    left: ${props => ( props.$menuresponse? '0px': '-415px')};
     z-index: 10;
   }
-  
-  ${({isVisible}) => {
-    if(isVisible){
-      return css`
-        left: 0px;
-        z-index: 10;
-      `
-    }
-    return css`
-        left: -415px;
-        z-index: 10;
-      `
-  }}
 `
